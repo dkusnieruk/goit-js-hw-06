@@ -33,7 +33,7 @@ fourthElement.classList.add(`item`);
 const fifthElement = 
 document.createElement('li');
 fifthElement.textContent =(ingredients[4]);
-firstElement.classList.add(`item`);
+fifthElement.classList.add(`item`);
 
 const sixthElement = 
 document.createElement('li');
