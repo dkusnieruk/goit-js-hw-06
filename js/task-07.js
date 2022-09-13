@@ -6,4 +6,3 @@ inputValue.addEventListener(`input`, (element) => {
 textValue.style.fontSize= element.target.value + `px`;
 });
 
-console.log(textValue);
