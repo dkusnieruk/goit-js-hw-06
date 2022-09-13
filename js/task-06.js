@@ -5,7 +5,7 @@ const desiredLength = solutionInput.attributes[2].value;
 
 
 solutionInput.addEventListener( `blur`, (event) =>{
-if (event.currentTarget.value.length === 6)
+if (event.currentTarget.value.length === +desiredLength)
 {
     event.currentTarget.setAttribute( `class`, `valid`);
    // event.target.classList.add(`validation-input.valid`);
@@ -22,9 +22,9 @@ else
 
 
 
-console.log(solutionInput.attributes[1].value);
+// console.log(solutionInput.attributes[1].value);
 
-console.log(solutionInput.attributes[2].value);
+// console.log(solutionInput.attributes[2].value);
 
-console.log(desiredLength);
+// console.log(desiredLength);
 
