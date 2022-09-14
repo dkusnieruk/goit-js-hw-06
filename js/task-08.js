@@ -13,8 +13,9 @@ function handleSubmit(event) {
     return alert("Uzupełnij wszystkie pola , kolego !");
   }
 
-  console.log(`Email: ${email.value}, Password: ${password.value}`);
-  console.log({email : email.value,   password: password.value });
+  const solutionOutput = {email : email.value,   password: password.value };
+
+  console.log(solutionOutput);
 
   event.currentTarget.reset();
 }
