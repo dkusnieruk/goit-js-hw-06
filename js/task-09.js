@@ -6,9 +6,9 @@ const getButton = document.querySelector(`button`);
 const getText = document.querySelector(`span`);
 
 
-getButton.addEventListener(`click`, (element) => {
+getButton.addEventListener(`click`, () => {
 document.body.style.backgroundColor = getRandomHexColor();
 getText.innerHTML = getRandomHexColor();
 });
 
-console.log(getRandomHexColor());
+// console.log(getRandomHexColor());
