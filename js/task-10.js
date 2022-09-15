@@ -14,7 +14,7 @@ function createDiv() {
   for (let i=0; i < getInput.value; i++){
 const solutionDiv= new Array(); 
 solutionDiv[i]=document.createElement(`div`);
-solutionDiv[i].id= `block`;
+solutionDiv[i].id= `solutionBox`;
 solutionDiv[i].style.width = (30 +i*10) + `px`;
 solutionDiv[i].style.height= (30+ i*10) + `px`;
 solutionDiv[i].style.border= `1px solid black`;
@@ -26,8 +26,11 @@ getBoxes.appendChild(solutionDiv[i]);
 getButton[0].addEventListener(`click`, createDiv);
 
 function destroyDiv(){
-  const solutionBlock =document.getElementById(`#block`);
-  getBoxes.remove(solutionBlock);
+  const solutionBlock =document.querySelectorAll(`#solutionBox`);
+   for (let i=0 ; i < solutionBlock.length; i++) {
+    solutionBlock[i].remove();
+   } 
+
 };
 
 getButton[1].addEventListener(`click`, destroyDiv);
